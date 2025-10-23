@@ -1,0 +1,44 @@
+[
+  {
+    "id": "runway-promo",
+    "tool_id": "runway-gen3",
+    "title": "Runway Gen-3 Pro 50% OFF",
+    "description": "Limited time offer on professional video AI generation",
+    "discount": "50% OFF",
+    "original_price": 15.00,
+    "deal_price": 7.50,
+    "currency": "USD",
+    "badge": "Limited Time",
+    "expires_at": "2025-12-31T23:59:59Z",
+    "featured": true,
+    "sort_order": 1
+  },
+  {
+    "id": "copilot-student",
+    "tool_id": "github-copilot",
+    "title": "GitHub Copilot Free for Students",
+    "description": "Free access to AI-powered coding assistant for verified students",
+    "discount": "Free Access",
+    "original_price": 10.00,
+    "deal_price": 0.00,
+    "currency": "USD",
+    "badge": "Student Deal",
+    "expires_at": "2025-12-31T23:59:59Z",
+    "featured": true,
+    "sort_order": 2
+  },
+  {
+    "id": "elevenlabs-new-user",
+    "tool_id": "elevenlabs",
+    "title": "ElevenLabs 30% OFF First 3 Months",
+    "description": "New user discount on premium voice generation plans",
+    "discount": "30% OFF",
+    "original_price": 5.00,
+    "deal_price": 3.50,
+    "currency": "USD",
+    "badge": "New User",
+    "expires_at": "2025-12-31T23:59:59Z",
+    "featured": true,
+    "sort_order": 3
+  }
+]

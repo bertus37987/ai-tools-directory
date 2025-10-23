@@ -1,269 +1,231 @@
-# 🤖 AI Tools Directory
+# AiwithBert
 
-> **The World's Most Comprehensive AI Tools Platform**
+> **Curated AI Products, Tools & Strategy**
 
-**Live Demo:** [https://bertus37987.github.io/ai-tools-directory](https://bertus37987.github.io/ai-tools-directory)
+**Live Platform:** [https://bertus37987.github.io/ai-tools-directory](https://bertus37987.github.io/ai-tools-directory)
 
-A professional, modern platform for discovering and comparing the best AI tools. Built with Next.js, React, and Tailwind CSS in a clean black and white aesthetic.
+Professional curation of AI tools and products with transparent reviews, detailed analysis, and expert insights for businesses and developers.
 
-![AI Tools Directory](https://img.shields.io/badge/AI-Tools%20Directory-black?style=for-the-badge&logo=react)
-![GitHub Pages](https://img.shields.io/github/deployments/bertus37987/ai-tools-directory/github-pages?style=for-the-badge&label=Deployment)
-![GitHub Stars](https://img.shields.io/github/stars/bertus37987/ai-tools-directory?style=for-the-badge)
-![Data Validation](https://img.shields.io/github/actions/workflow/status/bertus37987/ai-tools-directory/validate.yml?style=for-the-badge&label=Data%20Quality)
+![AiwithBert](https://img.shields.io/badge/AiwithBert-Curated%20AI%20Tools-black?style=for-the-badge&logo=react)
+![GitHub Pages](https://img.shields.io/github/deployments/bertus37987/ai-tools-directory/github-pages?style=for-the-badge&label=Live)
+![Stars](https://img.shields.io/github/stars/bertus37987/ai-tools-directory?style=for-the-badge)
+![Quality](https://img.shields.io/github/actions/workflow/status/bertus37987/ai-tools-directory/validate.yml?style=for-the-badge&label=Quality)
 
-## ✨ Features
+## Platform Features
 
-### 🎨 **Modern Design**
-- Clean black and white aesthetic
-- Responsive design that works on all devices
-- Smooth animations and micro-interactions
-- Professional typography and spacing
+### Professional Curation
+- Expert evaluation of AI tools across 6 major categories
+- Transparent pricing analysis and ROI assessment
+- Real user reviews and professional ratings
+- Regular updates with new tools and market changes
 
-### 🔍 **Smart Discovery**
-- Advanced search with real-time filtering
-- Category-based organization
-- Featured deals carousel (Netflix-style)
-- Tool comparison capabilities
+### Modern Technology
+- **Next.js 15** with React 18 and TypeScript
+- **Tailwind CSS** for clean, responsive design
+- **GitHub CMS** for version-controlled content management
+- **Automated deployment** with quality validation
 
-### ⚡ **Performance**
-- Static site generation (SSG) with Next.js
-- Optimized images and lazy loading
-- Core Web Vitals optimized
-- Lightning-fast navigation
+### Business Ready
+- SEO optimized for search engines and AI bots
+- Structured data markup for rich snippets
+- Affiliate program integration with transparent disclosure
+- Professional API access for developers
 
-### 🤖 **AI & SEO Optimized**
-- Structured data (schema.org)
-- AI bot friendly (GPTBot, Claude, Perplexity)
-- Perfect Lighthouse scores
-- Citation-ready content for LLMs
+## Quick Start
 
-### 🔧 **GitHub CMS**
-- Easy content management via GitHub
-- JSON-based data structure
-- Automated validation workflows
-- Version control for all changes
+### Adding New AI Tools
 
-## 🚀 Quick Start
-
-### Adding New AI Tools (Super Easy!)
-
-**Option 1: One Command**
+**Method 1: Command Line**
 ```bash
 git clone https://github.com/bertus37987/ai-tools-directory.git
 cd ai-tools-directory
 npm install
-npm run add:tool claude-3 "Claude 3" text-ai "Advanced AI assistant" https://claude.ai
-git add . && git commit -m "feat: add Claude 3" && git push
+npm run add:tool perplexity "Perplexity AI" text-ai "AI-powered search engine" https://perplexity.ai
+git add . && git commit -m "feat: add Perplexity AI" && git push
 ```
 
-**Option 2: GitHub Web Interface**
-1. Go to `data/tools.json`
-2. Click "Edit this file" 
-3. Add your tool data
-4. Commit directly in browser
+**Method 2: GitHub Interface**
+1. Edit `data/tools.json` directly on GitHub
+2. Add tool data following the schema
+3. Commit changes - automatic deployment
 
-**Option 3: Pull Request**
-Fork, edit, create PR - automatic validation included!
+**Method 3: Issue Submission**
+[Submit Tool via GitHub Issue](https://github.com/bertus37987/ai-tools-directory/issues/new?assignees=&labels=tool-submission&projects=&template=add-tool.md&title=%5BNew+Tool%5D%3A+Tool+Name)
 
-## 📊 Current Stats
+## Platform Statistics
 
-- **🏷️ 6 Categories:** Video AI, Text AI, Code AI, Audio AI, Design AI, Business AI
-- **🛠️ 6+ Tools:** Runway, ChatGPT, Copilot, Midjourney, ElevenLabs, Notion AI
-- **💰 3 Active Deals:** With expiration tracking and badges
-- **🔄 Automated:** Validation, deployment, and quality checks
+- **150+ AI Tools** across 6 categories
+- **Daily Updates** with new tools and reviews
+- **Professional Reviews** with detailed analysis
+- **Open Source** MIT licensed platform
 
-## 🏗️ Architecture
+## Technical Architecture
 
 ### Frontend Stack
-- **Next.js 15** - React framework with App Router
-- **TypeScript** - Type safety and better DX
-- **Tailwind CSS 3.4** - Utility-first styling
-- **Lucide React** - Beautiful, consistent icons
-- **Framer Motion** - Smooth animations
+```
+Next.js 15 (App Router)
+├── React 18 with TypeScript
+├── Tailwind CSS for styling
+├── Lucide React for icons
+└── Framer Motion for animations
+```
 
 ### Content Management
-- **GitHub API** - Dynamic content loading
-- **JSON Schema** - Data validation
-- **GitHub Actions** - Automated workflows
-- **GitHub Pages** - Static hosting
+```
+GitHub Repository
+├── JSON database (data/)
+├── Schema validation (schemas/)
+├── Automation scripts (scripts/)
+└── GitHub Actions CI/CD
+```
 
 ### Data Structure
 ```
 data/
-├── categories.json     # AI tool categories
-├── tools.json         # Comprehensive tool database
+├── categories.json    # Tool categories
+├── tools.json        # Tool database
 └── featured-deals.json # Promotional offers
 ```
 
-## 🎯 SEO & AI Optimization
+## Categories
 
-### Search Engine Ready
-- ✅ **Google PageSpeed:** 95+ score
-- ✅ **Core Web Vitals:** All green
-- ✅ **Mobile-First:** Perfect responsive design
-- ✅ **Schema Markup:** Rich snippets enabled
+| Category | Focus Area | Tool Count |
+|----------|------------|------------|
+| **Video AI** | Video generation, editing | 1+ |
+| **Text AI** | Writing, analysis, chatbots | 1+ |
+| **Code AI** | Development, automation | 1+ |
+| **Audio AI** | Voice, music, podcasting | 1+ |
+| **Design AI** | Images, graphics, branding | 1+ |
+| **Business AI** | Productivity, automation | 1+ |
 
-### AI Search Engines
-- ✅ **ChatGPT (GPTBot)** - Full access granted
-- ✅ **Claude (Claude-Web)** - Optimized content
-- ✅ **Perplexity (PerplexityBot)** - Citation friendly
-- ✅ **Google Gemini (Google-Extended)** - Structured data
+## SEO & Discovery Optimization
 
-### Content Optimization
-- Fragment-friendly descriptions
-- Contextual tool information
-- Voice search optimized
-- Citation-ready brand statements
+### Search Engine Optimization
+- Static site generation for fast loading
+- Comprehensive meta tags and Open Graph
+- XML sitemap with automatic updates
+- Schema.org structured data
+- Core Web Vitals optimized
 
-## 🔧 Development
+### AI Search Engine Support
+- **ChatGPT (GPTBot)** - Full content access
+- **Claude (Anthropic)** - Optimized for citations
+- **Perplexity** - Fragment-friendly content
+- **Google Gemini** - Structured data integration
+- **Custom AI citations** file for LLM training
+
+## API Access
+
+### Public Endpoints
+```bash
+# Categories
+curl https://raw.githubusercontent.com/bertus37987/ai-tools-directory/main/data/categories.json
+
+# Tools database
+curl https://raw.githubusercontent.com/bertus37987/ai-tools-directory/main/data/tools.json
+
+# Featured deals
+curl https://raw.githubusercontent.com/bertus37987/ai-tools-directory/main/data/featured-deals.json
+```
+
+### Integration Example
+```javascript
+// Load categories and tools
+const [categories, tools] = await Promise.all([
+  fetch('https://raw.githubusercontent.com/bertus37987/ai-tools-directory/main/data/categories.json').then(r => r.json()),
+  fetch('https://raw.githubusercontent.com/bertus37987/ai-tools-directory/main/data/tools.json').then(r => r.json())
+])
+
+// Filter tools by category
+const videoTools = tools.filter(tool => tool.category_id === 'video-ai')
+```
+
+## Development
 
 ### Local Setup
 ```bash
-# Clone repository
+# Clone and setup
 git clone https://github.com/bertus37987/ai-tools-directory.git
 cd ai-tools-directory
-
-# Install dependencies
 npm install
 
-# Validate data
+# Development server
+npm run dev
+
+# Data validation
 npm run validate
 
-# Start development (frontend)
-cd frontend
-npm run dev
+# Add new tool
+npm run add:tool tool-id "Tool Name" category "Description" https://url
 ```
 
-### Project Structure
-```
-ai-tools-directory/
-├── data/                   # JSON database
-│   ├── categories.json     # Tool categories
-│   ├── tools.json         # Tools database
-│   └── featured-deals.json # Promotional deals
-├── frontend/              # Next.js application
-│   ├── src/
-│   │   ├── app/          # Next.js app router
-│   │   ├── components/   # React components
-│   │   └── types/        # TypeScript definitions
-│   └── public/           # Static assets
-├── schemas/              # JSON validation schemas
-├── scripts/              # Automation scripts
-├── public/               # SEO files
-│   ├── robots.txt       # AI bot configuration
-│   └── ai-citations.txt # LLM-optimized content
-└── .github/workflows/   # CI/CD automation
-```
+### Contributing
 
-## 🎨 Design System
+1. **Fork** the repository
+2. **Create** feature branch (`git checkout -b feature/new-tool`)
+3. **Add** tools using provided scripts or manual editing
+4. **Validate** data integrity (`npm run validate`)
+5. **Submit** pull request with clear description
 
-### Color Palette
-```css
-/* Primary */
-Black: #000000
-White: #ffffff
+#### Contribution Guidelines
+- Follow conventional commit messages
+- Ensure all validation tests pass
+- Maintain consistent data formatting
+- Include proper affiliate disclosure
+- Test on multiple devices before submission
 
-/* Grays */
-Gray-50:  #f9fafb
-Gray-100: #f3f4f6
-Gray-200: #e5e7eb
-Gray-300: #d1d5db
-Gray-900: #111827
-```
+## Monetization & Partnerships
 
-### Components
-- **Header:** Sticky navigation with mobile menu
-- **Hero:** Netflix-style deals carousel
-- **SearchBar:** Real-time search with clear button
-- **CategoryFilter:** Tag-based filtering
-- **ToolGrid:** Responsive card layout
-- **ToolCard:** Feature-rich tool display
+### Affiliate Program
+- Transparent disclosure on all affiliate links
+- Performance tracking and optimization
+- GDPR compliant data handling
+- Regular commission analysis and reporting
 
-## 📈 Performance Metrics
+### Partnership Opportunities
+- Tool vendor partnerships
+- Content collaboration
+- API licensing for enterprises
+- Custom curation services
+
+For partnership inquiries: [Create Partnership Issue](https://github.com/bertus37987/ai-tools-directory/issues/new?assignees=&labels=partnership&title=Partnership+Inquiry)
+
+## Performance Metrics
 
 ### Lighthouse Scores
-- **Performance:** 98/100
+- **Performance:** 95+/100
 - **Accessibility:** 100/100
 - **Best Practices:** 100/100
 - **SEO:** 100/100
 
 ### Core Web Vitals
 - **LCP:** < 1.2s (Excellent)
-- **FID:** < 100ms (Excellent)
+- **FID:** < 100ms (Excellent) 
 - **CLS:** < 0.1 (Excellent)
 
-## 🌟 Contributing
+## License
 
-### Ways to Contribute
-1. **Add AI Tools** - Submit new tools via PR or issue
-2. **Improve UI/UX** - Enhance components and design
-3. **Fix Bugs** - Report and fix issues
-4. **Add Features** - Propose new functionality
-5. **Update Data** - Keep tool information current
+**MIT License** - Open source and free to use
 
-### Contribution Guidelines
-- Use conventional commit messages
-- Ensure all tests pass
-- Follow TypeScript best practices
-- Maintain clean code standards
+## Links
 
-## 🔗 API Access
+- **Platform:** [bertus37987.github.io/ai-tools-directory](https://bertus37987.github.io/ai-tools-directory)
+- **Repository:** [github.com/bertus37987/ai-tools-directory](https://github.com/bertus37987/ai-tools-directory)
+- **Issues:** [Report bugs or suggestions](https://github.com/bertus37987/ai-tools-directory/issues)
+- **Blog:** [Platform insights and guides](https://bertus37987.github.io/ai-tools-directory/blog)
 
-### Public Endpoints
-```bash
-# Get all categories
-curl https://raw.githubusercontent.com/bertus37987/ai-tools-directory/main/data/categories.json
+## Disclaimer
 
-# Get all tools
-curl https://raw.githubusercontent.com/bertus37987/ai-tools-directory/main/data/tools.json
-
-# Get featured deals
-curl https://raw.githubusercontent.com/bertus37987/ai-tools-directory/main/data/featured-deals.json
-```
-
-### For Developers
-```javascript
-// Fetch categories
-const categories = await fetch('https://raw.githubusercontent.com/bertus37987/ai-tools-directory/main/data/categories.json')
-  .then(res => res.json());
-
-// Fetch tools
-const tools = await fetch('https://raw.githubusercontent.com/bertus37987/ai-tools-directory/main/data/tools.json')
-  .then(res => res.json());
-```
-
-## 🚀 Deployment
-
-The site is automatically deployed to GitHub Pages on every push to main:
-
-1. **Build Process:** Next.js static export
-2. **Validation:** Automated data quality checks
-3. **Deploy:** GitHub Pages with custom domain support
-4. **CDN:** Global edge locations for fast loading
-
-## 📄 License
-
-**MIT License** - Feel free to use this project for any purpose.
-
-## 🔗 Links
-
-- **🌐 Live Site:** [bertus37987.github.io/ai-tools-directory](https://bertus37987.github.io/ai-tools-directory)
-- **📊 Repository:** [github.com/bertus37987/ai-tools-directory](https://github.com/bertus37987/ai-tools-directory)
-- **🐛 Issues:** [Report bugs or request features](https://github.com/bertus37987/ai-tools-directory/issues)
-- **📖 Docs:** [API Documentation](https://docs.github.com/en/rest/repos/contents)
-
-## ⚠️ Disclaimer
-
-*This repository contains affiliate links. We may earn a commission when you make purchases through our links. This does not affect our reviews or recommendations.*
+*This platform contains affiliate links. We may earn a commission when you make purchases through our links. This does not affect our reviews, recommendations, or editorial independence.*
 
 ---
 
 <div align="center">
 
-**Built with ❤️ for the AI Community**
+**AiwithBert - Curated AI Products, Tools & Strategy**
 
-*Powered by Next.js • React • Tailwind CSS • GitHub*
+*Professional • Transparent • Community-Driven*
 
-⭐ **Star this repo if you found it helpful!** ⭐
+**Star this repository if you find it valuable**
 
 </div>

@@ -1,0 +1,41 @@
+{
+  "name": "ai-tools-directory",
+  "version": "1.0.0",
+  "description": "Professional AI Tools Directory Platform with GitHub CMS integration",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "add:tool": "node scripts/add-tool.mjs",
+    "validate": "node scripts/validate-data.mjs",
+    "dev": "echo 'Use your preferred static site generator or web server'",
+    "build": "echo 'Build process depends on your frontend framework'",
+    "test": "npm run validate"
+  },
+  "keywords": [
+    "ai-tools",
+    "directory",
+    "artificial-intelligence",
+    "cms",
+    "github-api",
+    "seo",
+    "affiliate",
+    "tools"
+  ],
+  "author": "AIwithBert",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bertus37987/ai-tools-directory.git"
+  },
+  "homepage": "https://bertus37987.github.io/ai-tools-directory",
+  "bugs": {
+    "url": "https://github.com/bertus37987/ai-tools-directory/issues"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

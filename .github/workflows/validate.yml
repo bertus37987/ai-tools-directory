@@ -1,0 +1,71 @@
+name: Validate Data
+
+on:
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'schemas/**'
+      - 'scripts/**'
+  push:
+    branches: [ main ]
+    paths:
+      - 'data/**'
+      - 'schemas/**'
+      - 'scripts/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Install dependencies
+      run: |
+        npm init -y
+        npm install ajv@^8.17.1
+        
+    - name: Validate JSON syntax
+      run: |
+        echo "Validating JSON files..."
+        for file in data/*.json; do
+          echo "Checking $file"
+          cat "$file" | jq . > /dev/null || exit 1
+        done
+        
+    - name: Run data validation
+      run: node scripts/validate-data.mjs
+      
+    - name: Check for required files
+      run: |
+        required_files=(
+          "data/categories.json"
+          "data/tools.json" 
+          "data/featured-deals.json"
+          "public/robots.txt"
+          "public/ai-citations.txt"
+        )
+        
+        for file in "${required_files[@]}"; do
+          if [ ! -f "$file" ]; then
+            echo "Error: Required file $file is missing"
+            exit 1
+          fi
+        done
+        
+    - name: Validate robots.txt
+      run: |
+        if ! grep -q "User-agent: GPTBot" public/robots.txt; then
+          echo "Error: robots.txt missing GPTBot directive"
+          exit 1
+        fi
+        if ! grep -q "User-agent: Google-Extended" public/robots.txt; then
+          echo "Error: robots.txt missing Google-Extended directive"  
+          exit 1
+        fi

@@ -4,11 +4,11 @@
     "name": "Runway Gen-3",
     "slug": "runway-gen3",
     "category_id": "video-ai",
-    "short_description": "Cinematic text-to-video generation with professional quality output",
-    "long_description": "Runway Gen-3 enables creators to turn any text prompt into high-quality video content, supporting diverse styles and workflows. Features include frame interpolation, background removal, and real-time preview capabilities for professional video production.",
-    "logo_url": "https://via.placeholder.com/200x200/FF6B6B/FFFFFF?text=RG3",
+    "short_description": "Professional text-to-video generation with cinematic quality output and advanced editing capabilities",
+    "long_description": "Runway Gen-3 represents the cutting edge of AI video generation technology. Create professional-quality videos from text prompts with advanced features including frame interpolation, background removal, and real-time preview. Trusted by creative professionals and content creators worldwide for its consistent, high-quality output and intuitive workflow integration.",
+    "logo_url": "https://assets.website-files.com/6448bb4b6cf3aa3b92e9e5cf/6448bb4b6cf3aa7e0fe9e634_runway-logo-white.svg",
     "website_url": "https://runwayml.com",
-    "affiliate_link": "https://runwayml.com?ref=aitools-platform",
+    "affiliate_link": "https://runwayml.com?ref=aiwithbert",
     "pricing": {
       "type": "paid",
       "starting_price": 15,
@@ -20,10 +20,10 @@
       "Frame interpolation",
       "Background removal",
       "Real-time preview",
-      "Multiple export formats",
-      "Professional quality output"
+      "4K export quality",
+      "Commercial licensing"
     ],
-    "tags": ["video", "generation", "ai", "creative", "professional"],
+    "tags": ["video", "generation", "creative", "professional", "cinematic"],
     "rating": 4.8,
     "reviews_count": 125,
     "deal": {
@@ -34,7 +34,7 @@
     },
     "meta": {
       "created_at": "2025-10-23T19:30:00Z",
-      "updated_at": "2025-10-23T19:30:00Z",
+      "updated_at": "2025-10-23T21:00:00Z",
       "status": "published"
     }
   },
@@ -43,11 +43,11 @@
     "name": "ChatGPT Plus",
     "slug": "chatgpt-plus",
     "category_id": "text-ai",
-    "short_description": "Advanced conversational AI with GPT-4 access for writing and analysis",
-    "long_description": "ChatGPT Plus provides access to GPT-4, offering superior reasoning, creativity, and accuracy for complex tasks including writing, analysis, coding, and research. With priority response times and enhanced capabilities.",
-    "logo_url": "https://via.placeholder.com/200x200/4ECDC4/FFFFFF?text=GPT",
+    "short_description": "Advanced conversational AI with GPT-4 access, priority responses, and enhanced reasoning capabilities",
+    "long_description": "ChatGPT Plus provides access to OpenAI's most advanced language model, GPT-4, with priority access during peak times. Features superior reasoning, creativity, and accuracy for complex tasks including writing, analysis, coding, and research. Essential for professionals requiring reliable, high-quality AI assistance.",
+    "logo_url": "https://cdn.openai.com/API/logo-openai.svg",
     "website_url": "https://openai.com/chatgpt",
-    "affiliate_link": "https://openai.com/chatgpt?ref=aitools-platform",
+    "affiliate_link": "https://openai.com/chatgpt?ref=aiwithbert",
     "pricing": {
       "type": "paid",
       "starting_price": 20,
@@ -58,11 +58,11 @@
       "GPT-4 access",
       "Priority response times",
       "Enhanced reasoning",
-      "Creative writing",
       "Code assistance",
-      "Research capabilities"
+      "Research capabilities",
+      "Plugin ecosystem"
     ],
-    "tags": ["text", "writing", "ai", "assistant", "research"],
+    "tags": ["text", "writing", "assistant", "research", "analysis"],
     "rating": 4.6,
     "reviews_count": 2340,
     "deal": {
@@ -73,7 +73,7 @@
     },
     "meta": {
       "created_at": "2025-10-23T19:30:00Z",
-      "updated_at": "2025-10-23T19:30:00Z",
+      "updated_at": "2025-10-23T21:00:00Z",
       "status": "published"
     }
   },
@@ -82,11 +82,11 @@
     "name": "GitHub Copilot",
     "slug": "github-copilot",
     "category_id": "code-ai",
-    "short_description": "AI-powered code completion and suggestions for developers",
-    "long_description": "GitHub Copilot uses advanced AI to provide intelligent code completion, suggestions, and entire function generation across multiple programming languages. Integrates seamlessly with popular IDEs and development workflows.",
-    "logo_url": "https://via.placeholder.com/200x200/45B7D1/FFFFFF?text=GHC",
+    "short_description": "AI-powered code completion and suggestions with multi-language support and IDE integration",
+    "long_description": "GitHub Copilot uses advanced AI to provide intelligent code completion, suggestions, and entire function generation across 40+ programming languages. Seamlessly integrates with popular IDEs including VS Code, JetBrains, and Neovim. Trained on billions of lines of public code to assist developers with context-aware suggestions.",
+    "logo_url": "https://github.githubassets.com/assets/copilot-8c1ce47faa92.svg",
     "website_url": "https://github.com/features/copilot",
-    "affiliate_link": "https://github.com/features/copilot?ref=aitools-platform",
+    "affiliate_link": "https://github.com/features/copilot?ref=aiwithbert",
     "pricing": {
       "type": "paid",
       "starting_price": 10,
@@ -94,25 +94,25 @@
       "billing_cycle": "monthly"
     },
     "features": [
-      "Code completion",
       "Multi-language support",
       "IDE integration",
       "Context-aware suggestions",
       "Function generation",
-      "Documentation assistance"
+      "Documentation assistance",
+      "Security vulnerability detection"
     ],
-    "tags": ["code", "development", "ai", "productivity", "github"],
+    "tags": ["development", "productivity", "coding", "automation"],
     "rating": 4.7,
     "reviews_count": 1850,
     "deal": {
       "active": true,
-      "discount": "Free for students",
-      "badge": "Student Deal",
+      "discount": "Free for Students",
+      "badge": "Education",
       "expires_at": "2025-12-31T23:59:59Z"
     },
     "meta": {
       "created_at": "2025-10-23T19:30:00Z",
-      "updated_at": "2025-10-23T19:30:00Z",
+      "updated_at": "2025-10-23T21:00:00Z",
       "status": "published"
     }
   },
@@ -121,11 +121,11 @@
     "name": "Midjourney",
     "slug": "midjourney",
     "category_id": "design-ai",
-    "short_description": "High-quality AI image generation with artistic styles and detailed prompts",
-    "long_description": "Midjourney creates stunning AI-generated images with exceptional artistic quality. Supports detailed prompting, various artistic styles, high-resolution output, and commercial licensing for professional creative work.",
-    "logo_url": "https://via.placeholder.com/200x200/FFEAA7/FFFFFF?text=MJ",
+    "short_description": "High-quality AI image generation with artistic styles, detailed prompts, and commercial licensing",
+    "long_description": "Midjourney creates stunning AI-generated images with exceptional artistic quality and consistency. Features detailed prompting system, various artistic styles, high-resolution output up to 8K, and full commercial licensing. Preferred by designers, marketers, and content creators for its superior aesthetic quality and reliable results.",
+    "logo_url": "https://cdn.midjourney.com/brand/midjourney-logo.svg",
     "website_url": "https://midjourney.com",
-    "affiliate_link": "https://midjourney.com?ref=aitools-platform",
+    "affiliate_link": "https://midjourney.com?ref=aiwithbert",
     "pricing": {
       "type": "paid",
       "starting_price": 10,
@@ -133,14 +133,14 @@
       "billing_cycle": "monthly"
     },
     "features": [
-      "Artistic styles",
-      "High resolution output",
+      "Artistic style control",
+      "8K resolution output",
       "Commercial licensing",
-      "Detailed prompting",
+      "Advanced prompting",
       "Style variations",
       "Community gallery"
     ],
-    "tags": ["image", "art", "design", "creative", "generation"],
+    "tags": ["design", "creative", "marketing", "content"],
     "rating": 4.8,
     "reviews_count": 3200,
     "deal": {
@@ -151,7 +151,7 @@
     },
     "meta": {
       "created_at": "2025-10-23T19:30:00Z",
-      "updated_at": "2025-10-23T19:30:00Z",
+      "updated_at": "2025-10-23T21:00:00Z",
       "status": "published"
     }
   },
@@ -160,11 +160,11 @@
     "name": "ElevenLabs",
     "slug": "elevenlabs",
     "category_id": "audio-ai",
-    "short_description": "Realistic AI voice generation and cloning technology",
-    "long_description": "ElevenLabs provides cutting-edge AI voice synthesis and cloning technology. Create realistic voices, clone existing voices, support multiple languages, and integrate via API for scalable voice generation projects.",
-    "logo_url": "https://via.placeholder.com/200x200/96CEB4/FFFFFF?text=EL",
+    "short_description": "Realistic AI voice generation and cloning with multi-language support and API integration",
+    "long_description": "ElevenLabs provides industry-leading AI voice synthesis and cloning technology. Create realistic voices, clone existing voices with just minutes of audio, support for 30+ languages, and robust API for integration. Used by podcasters, content creators, and enterprises for professional voice generation at scale.",
+    "logo_url": "https://elevenlabs.io/brand/elevenlabs-logo.svg",
     "website_url": "https://elevenlabs.io",
-    "affiliate_link": "https://elevenlabs.io?ref=aitools-platform",
+    "affiliate_link": "https://elevenlabs.io?ref=aiwithbert",
     "pricing": {
       "type": "freemium",
       "starting_price": 5,
@@ -172,25 +172,25 @@
       "billing_cycle": "monthly"
     },
     "features": [
-      "Voice cloning",
-      "Multiple languages",
-      "API access",
+      "Voice cloning technology",
+      "30+ language support",
+      "Professional API",
       "Real-time generation",
       "Custom voice training",
-      "High-quality output"
+      "Enterprise solutions"
     ],
-    "tags": ["audio", "voice", "generation", "cloning", "api"],
+    "tags": ["audio", "voice", "content", "automation", "api"],
     "rating": 4.5,
     "reviews_count": 890,
     "deal": {
       "active": true,
-      "discount": "30% OFF first 3 months",
+      "discount": "30% OFF First 3 Months",
       "badge": "New User",
       "expires_at": "2025-12-31T23:59:59Z"
     },
     "meta": {
       "created_at": "2025-10-23T19:30:00Z",
-      "updated_at": "2025-10-23T19:30:00Z",
+      "updated_at": "2025-10-23T21:00:00Z",
       "status": "published"
     }
   },
@@ -199,11 +199,11 @@
     "name": "Notion AI",
     "slug": "notion-ai",
     "category_id": "business-ai",
-    "short_description": "AI writing assistant integrated into Notion workspace for enhanced productivity",
-    "long_description": "Notion AI seamlessly integrates AI writing capabilities directly into your Notion workspace. Generate content, summarize notes, create action items, and enhance productivity with intelligent writing assistance.",
-    "logo_url": "https://via.placeholder.com/200x200/DDA0DD/FFFFFF?text=NA",
+    "short_description": "AI writing assistant integrated into Notion workspace for enhanced productivity and collaboration",
+    "long_description": "Notion AI seamlessly integrates AI writing capabilities directly into your Notion workspace. Generate content, summarize notes, create action items, and enhance team productivity with intelligent writing assistance. Perfect for teams already using Notion for project management and documentation.",
+    "logo_url": "https://www.notion.so/images/favicon.ico",
     "website_url": "https://notion.so/ai",
-    "affiliate_link": "https://notion.so/ai?ref=aitools-platform",
+    "affiliate_link": "https://notion.so/ai?ref=aiwithbert",
     "pricing": {
       "type": "paid",
       "starting_price": 8,
@@ -215,10 +215,10 @@
       "Content generation",
       "Smart summaries",
       "Action item creation",
-      "Note enhancement",
-      "Team collaboration"
+      "Team collaboration",
+      "Template automation"
     ],
-    "tags": ["productivity", "workspace", "writing", "business", "integration"],
+    "tags": ["productivity", "workspace", "collaboration", "business"],
     "rating": 4.4,
     "reviews_count": 1200,
     "deal": {
@@ -229,7 +229,7 @@
     },
     "meta": {
       "created_at": "2025-10-23T19:30:00Z",
-      "updated_at": "2025-10-23T19:30:00Z",
+      "updated_at": "2025-10-23T21:00:00Z",
       "status": "published"
     }
   }

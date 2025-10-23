@@ -8,6 +8,7 @@ on:
       - 'data/**'
       - 'package.json'
       - 'next.config.js'
+      - 'next-sitemap.config.js'
       - 'tailwind.config.js'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
@@ -44,9 +45,12 @@ jobs:
     - name: Build Next.js application
       run: npm run build
       
+    - name: Export static site
+      run: npm run export
+
     - name: Add .nojekyll file
       run: touch out/.nojekyll
-        
+
     - name: Setup GitHub Pages
       uses: actions/configure-pages@v4
       
@@ -69,6 +73,4 @@ jobs:
         
       - name: Output deployment URL
         run: |
-          echo "🚀 Site deployed successfully!"
-          echo "📍 Live URL: ${{ steps.deployment.outputs.page_url }}"
-          echo "⚡ The AI Tools Directory is now live on GitHub Pages!"
+          echo "🚀 Site deployed with sitemap.xml and robots.txt"

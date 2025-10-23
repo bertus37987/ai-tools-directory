@@ -10,26 +10,32 @@ export default function Header() {
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+          {/* Brand */}
           <div className="flex items-center">
-            <div className="text-xl font-bold text-black">
-              🤖 AI Tools Directory
+            <div className="text-xl font-bold text-black tracking-tight">
+              AiwithBert
+            </div>
+            <div className="hidden sm:block ml-3 text-sm text-gray-600">
+              Curated AI Tools
             </div>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#categories" className="text-gray-700 hover:text-black transition-colors">
-              Categories
+            <a href="#categories" className="text-gray-700 hover:text-black transition-colors font-medium">
+              Tools
             </a>
-            <a href="#deals" className="text-gray-700 hover:text-black transition-colors">
+            <a href="#deals" className="text-gray-700 hover:text-black transition-colors font-medium">
               Deals
             </a>
-            <a href="#submit" className="text-gray-700 hover:text-black transition-colors">
-              Submit Tool
-            </a>
-            <a href="https://github.com/bertus37987/ai-tools-directory/issues" className="text-gray-700 hover:text-black transition-colors">
+            <a href="/blog" className="text-gray-700 hover:text-black transition-colors font-medium">
               Blog
+            </a>
+            <a href="/guides" className="text-gray-700 hover:text-black transition-colors font-medium">
+              Guides
+            </a>
+            <a href="#submit" className="text-gray-700 hover:text-black transition-colors font-medium">
+              Submit
             </a>
           </nav>
 
@@ -73,22 +79,25 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-4 py-6 space-y-4">
-            <a href="#categories" className="block text-gray-700 hover:text-black">
-              Categories
+            <a href="#categories" className="block text-gray-700 hover:text-black font-medium">
+              Tools
             </a>
-            <a href="#deals" className="block text-gray-700 hover:text-black">
+            <a href="#deals" className="block text-gray-700 hover:text-black font-medium">
               Deals
             </a>
-            <a href="#submit" className="block text-gray-700 hover:text-black">
-              Submit Tool
-            </a>
-            <a href="https://github.com/bertus37987/ai-tools-directory/issues" className="block text-gray-700 hover:text-black">
+            <a href="/blog" className="block text-gray-700 hover:text-black font-medium">
               Blog
+            </a>
+            <a href="/guides" className="block text-gray-700 hover:text-black font-medium">
+              Guides
+            </a>
+            <a href="#submit" className="block text-gray-700 hover:text-black font-medium">
+              Submit
             </a>
             <div className="pt-4 border-t border-gray-200">
               <a 
                 href="https://github.com/bertus37987/ai-tools-directory/issues/new?assignees=&labels=tool-submission&projects=&template=add-tool.md&title=%5BNew+Tool%5D%3A+Tool+Name"
-                className="btn-primary w-full text-center"
+                className="btn-primary w-full text-center block"
               >
                 Submit Tool
               </a>

@@ -5,25 +5,23 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AI Tools Directory | The Complete Guide to AI Tools',
-  description: 'Discover, compare and find the best AI tools for your needs. Comprehensive directory with reviews, pricing, and features.',
-  keywords: ['AI tools', 'artificial intelligence', 'AI directory', 'machine learning tools', 'AI software'],
-  authors: [{ name: 'AI Tools Directory' }],
+  title: 'AiwithBert | Curated AI Products, Tools & Strategy',
+  description: 'Discover and compare the best AI tools for your business. Professional curation of AI products with detailed reviews, pricing, and expert insights.',
+  keywords: ['AI tools', 'artificial intelligence', 'AI directory', 'machine learning tools', 'AI software', 'business AI', 'productivity'],
+  authors: [{ name: 'AiwithBert' }],
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
-  verification: {
-    google: 'tXxwrlbUnN6pyj-d41iTlfwm2mf1g50i76230HiQ9Tg',
-  },
   openGraph: {
-    title: 'AI Tools Directory | The Complete Guide to AI Tools',
-    description: 'Discover, compare and find the best AI tools for your needs.',
+    title: 'AiwithBert | Curated AI Products, Tools & Strategy',
+    description: 'Discover and compare the best AI tools for your business. Professional curation with expert insights.',
     type: 'website',
     locale: 'en_US',
+    siteName: 'AiwithBert'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Tools Directory',
-    description: 'The complete guide to AI tools and software',
+    title: 'AiwithBert',
+    description: 'Curated AI Products, Tools & Strategy',
   }
 }
 

@@ -19,42 +19,34 @@ export default function CategoryFilter({
   const totalTools = Object.values(toolCounts).reduce((sum, count) => sum + count, 0)
 
   return (
-    <div className="mb-10">
-      <h3 className="text-lg font-semibold text-black mb-4">Filter by Category</h3>
+    <div className="mb-12">
+      <h3 className="text-lg font-semibold text-black mb-6">Filter by Category</h3>
       <div className="flex flex-wrap gap-3">
         <button
           onClick={() => onCategoryChange('all')}
-          className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-200 ${
+          className={`px-6 py-3 rounded-lg text-sm font-medium transition-all duration-150 ${
             selectedCategory === 'all'
-              ? 'bg-black text-white shadow-lg scale-105'
-              : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
+              ? 'bg-black text-white'
+              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
         >
-          🎆 All Tools ({totalTools})
+          All Tools ({totalTools})
         </button>
         
         {sortedCategories.map((category) => {
           const count = toolCounts[category.id] || 0
-          const emoji = {
-            'video-ai': '🎥',
-            'text-ai': '✍️',
-            'code-ai': '💻',
-            'audio-ai': '🎵',
-            'design-ai': '🎨',
-            'business-ai': '💼'
-          }[category.id] || '🤖'
           
           return (
             <button
               key={category.id}
               onClick={() => onCategoryChange(category.id)}
-              className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-200 ${
+              className={`px-6 py-3 rounded-lg text-sm font-medium transition-all duration-150 ${
                 selectedCategory === category.id
-                  ? 'bg-black text-white shadow-lg scale-105'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
+                  ? 'bg-black text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              {emoji} {category.name} ({count})
+              {category.name} ({count})
             </button>
           )
         })}

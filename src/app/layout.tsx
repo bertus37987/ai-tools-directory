@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'AI Tools Directory' }],
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
+  verification: {
+    google: 'tXxwrlbUnN6pyj-d41iTlfwm2mf1g50i76230HiQ9Tg',
+  },
   openGraph: {
     title: 'AI Tools Directory | The Complete Guide to AI Tools',
     description: 'Discover, compare and find the best AI tools for your needs.',

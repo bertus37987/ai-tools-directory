@@ -26,7 +26,7 @@
   }
   
   .tool-card {
-    @apply bg-white border border-gray-200 rounded-xl p-6 hover:border-gray-300 hover:shadow-lg transition-all duration-200 group;
+    @apply bg-white border border-gray-200 rounded-xl p-6 hover:border-gray-300 hover:shadow-lg transition-all duration-200;
   }
   
   .category-badge {

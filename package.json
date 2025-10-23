@@ -1,6 +1,6 @@
 {
   "name": "ai-tools-directory",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "The World's Most Comprehensive AI Tools Platform - Live on GitHub Pages",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next build && next export",
+    "postbuild": "next-sitemap",
     "add:tool": "node scripts/add-tool.mjs",
     "validate": "node scripts/validate-data.mjs",
     "test": "npm run validate"
@@ -24,7 +25,8 @@
     "lucide-react": "^0.294.0",
     "@headlessui/react": "^1.7.17",
     "clsx": "^2.0.0",
-    "ajv": "^8.17.1"
+    "ajv": "^8.17.1",
+    "next-sitemap": "^4.3.1"
   },
   "devDependencies": {
     "@types/node": "^20.9.2",

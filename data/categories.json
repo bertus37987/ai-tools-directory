@@ -1,0 +1,68 @@
+[
+  {
+    "id": "video-ai",
+    "name": "Video AI",
+    "slug": "video-ai",
+    "description": "AI tools for video creation, editing, and generation",
+    "icon": "video",
+    "color": "#FF6B6B",
+    "sort_order": 1,
+    "created_at": "2025-10-23T19:30:00Z",
+    "updated_at": "2025-10-23T19:30:00Z"
+  },
+  {
+    "id": "text-ai",
+    "name": "Text AI",
+    "slug": "text-ai",
+    "description": "AI writing assistants and text generation tools",
+    "icon": "edit",
+    "color": "#4ECDC4",
+    "sort_order": 2,
+    "created_at": "2025-10-23T19:30:00Z",
+    "updated_at": "2025-10-23T19:30:00Z"
+  },
+  {
+    "id": "code-ai",
+    "name": "Code AI",
+    "slug": "code-ai",
+    "description": "AI-powered coding assistants and development tools",
+    "icon": "code",
+    "color": "#45B7D1",
+    "sort_order": 3,
+    "created_at": "2025-10-23T19:30:00Z",
+    "updated_at": "2025-10-23T19:30:00Z"
+  },
+  {
+    "id": "audio-ai",
+    "name": "Audio AI",
+    "slug": "audio-ai",
+    "description": "AI tools for audio generation, editing, and processing",
+    "icon": "volume",
+    "color": "#96CEB4",
+    "sort_order": 4,
+    "created_at": "2025-10-23T19:30:00Z",
+    "updated_at": "2025-10-23T19:30:00Z"
+  },
+  {
+    "id": "design-ai",
+    "name": "Design AI",
+    "slug": "design-ai",
+    "description": "AI-powered design and image generation tools",
+    "icon": "image",
+    "color": "#FFEAA7",
+    "sort_order": 5,
+    "created_at": "2025-10-23T19:30:00Z",
+    "updated_at": "2025-10-23T19:30:00Z"
+  },
+  {
+    "id": "business-ai",
+    "name": "Business AI",
+    "slug": "business-ai",
+    "description": "AI tools for business automation and productivity",
+    "icon": "briefcase",
+    "color": "#DDA0DD",
+    "sort_order": 6,
+    "created_at": "2025-10-23T19:30:00Z",
+    "updated_at": "2025-10-23T19:30:00Z"
+  }
+]

@@ -7,14 +7,13 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  experimental: {
-    appDir: true
-  },
+  distDir: 'out',
   eslint: {
     ignoreDuringBuilds: true
   },
-  // Optimize for GitHub Pages
-  distDir: 'out'
+  typescript: {
+    ignoreBuildErrors: false
+  }
 }
 
 module.exports = nextConfig

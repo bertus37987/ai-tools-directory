@@ -4,51 +4,50 @@
 
 @layer base {
   * {
-    @apply border-gray-200;
+    @apply border-dark-border;
   }
-  
+
   html {
     @apply scroll-smooth;
   }
-  
+
   body {
-    @apply font-sans leading-relaxed;
+    @apply bg-dark-bg text-dark-text font-sans leading-relaxed antialiased;
   }
 }
 
 @layer components {
+  /* Minimalist button styles */
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-black border border-black rounded-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 transition-colors duration-200;
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-dark-accent hover:bg-dark-accent-hover border border-transparent rounded-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-dark-accent focus:ring-offset-2 focus:ring-offset-dark-bg;
   }
-  
+
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-black bg-white border border-gray-300 rounded-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors duration-200;
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-dark-text bg-dark-bg-secondary hover:bg-dark-bg-tertiary border border-dark-border rounded-lg transition-colors duration-150;
   }
-  
+
+  /* Compact tool card */
   .tool-card {
-    @apply bg-white border border-gray-200 rounded-xl p-6 hover:border-gray-300 hover:shadow-lg transition-all duration-200;
+    @apply bg-dark-bg-secondary border border-dark-border rounded-lg p-4 hover:border-dark-accent transition-all duration-200;
   }
-  
+
+  /* Category badge */
   .category-badge {
-    @apply inline-flex items-center px-3 py-1 text-xs font-medium bg-gray-100 text-gray-800 rounded-full;
+    @apply inline-flex items-center px-2.5 py-0.5 text-xs font-medium bg-dark-bg-tertiary text-dark-text-secondary rounded-full;
+  }
+
+  /* Minimalist navigation */
+  .nav-link {
+    @apply text-dark-text-secondary hover:text-dark-text transition-colors duration-150 text-sm;
   }
   
-  .search-input {
-    @apply w-full px-4 py-3 text-black bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent placeholder-gray-500;
+  .nav-link-active {
+    @apply text-dark-accent;
   }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
-  }
-  
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
   }
 }

@@ -1,0 +1,51 @@
+name: Automated AI News Generation
+
+on:
+  schedule:
+    - cron: '0 6 * * *'    # Daily at 06:00 CET
+    - cron: '0 18 * * 0'   # Weekly on Sunday at 18:00 CET
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate-news:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Install dependencies
+      run: npm install axios cheerio
+      
+    - name: Generate daily news
+      if: github.event.schedule == '0 6 * * *'
+      run: node scripts/generate-daily-news.js
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Generate weekly highlights
+      if: github.event.schedule == '0 18 * * 0'
+      run: node scripts/generate-weekly-highlights.js
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        if [ -n "$(git diff --staged)" ]; then
+          git commit -m "feat: automated AI news update $(date +'%Y-%m-%d')"
+          git push
+        else
+          echo "No changes to commit"
+        fi

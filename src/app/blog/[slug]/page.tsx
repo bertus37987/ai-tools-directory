@@ -30,18 +30,26 @@ const blogPosts: { [key: string]: BlogPost } = {
 
 *Die wichtigsten KI-Entwicklungen des Tages im Überblick*
 
-## Sora 2.0: OpenAI setzt neue Video-KI Standards
+---
 
-OpenAI hat heute Sora 2.0 mit bedeutenden Verbesserungen veröffentlicht, die professionelle Video-Produktion revolutionieren könnten.
+## Sora 2.0: OpenAI setzt neue Maßstäbe
 
-### Wichtigste Neuerungen:
-- **Verbesserte Physik-Engine**: Realistische Objektinteraktionen und Schwerkraft-Effekte
-- **Audio-Synchronisation**: Automatische Ton-Generierung passend zu visuellen Inhalten
-- **Cineastische Kontrollen**: Präzise Kamera-Bewegungen und Bildkomposition
-- **4K-Export**: Professionelle Auflösung für kommerzielle Nutzung
+OpenAI hat heute **Sora 2.0** vorgestellt - die nächste Generation seines Text-to-Video-Modells, das die Grenzen zwischen KI-generierten und professionell produzierten Videos weiter verwischt.
+
+**Warum es wichtig ist**
+
+Sora 2.0 schließt die Lücke zwischen KI-generierten und professionell produzierten Videos. Content-Creator erhalten damit Hollywood-Qualität zu einem Bruchteil der Kosten.
+
+### Kernfeatures:
+
+- **4K-Auflösung** bei 30fps
+- **Realistische Objektinteraktionen**
+- **Audio-Sync**: Automatische Ton-Generierung
+- **Multi-Shot**: Verschiedene Kamerawinkel
 
 ### Warum es wichtig ist
-Sora 2.0 schließt die Lücke zwischen KI-generierten und professionell produzierten Videos. Content-Creator erhalten damit Hollywood-Qualität zu einem Bruchteil der bisherigen Kosten.
+
+Sora 2.0 schließt die Lücke zwischen KI-generierten und professionell produzierten Videos. Content-Creator erhalten damit Hollywood-Qualität zu einem Bruchteil der Kosten und Zeitaufwand.
 
 **Quelle:** [OpenAI Sora 2.0 Release](https://openai.com/sora-2)
 
@@ -52,16 +60,21 @@ Sora 2.0 schließt die Lücke zwischen KI-generierten und professionell produzie
 Google hat die Integration von Gemini AI in alle Workspace-Anwendungen angekündigt.
 
 ### Neue Features:
+
 - **Smart Compose**: Kontextbewusste Texterstellung in Gmail und Docs
 - **Meeting Intelligence**: Automatische Zusammenfassungen und Action Items
-- **Datenanalyse**: KI-gestützte Insights in Google Sheets
+- **Datalyze**: KI-gestützte Insights in Google Sheets
+
+### Warum es wichtig ist
+
+Google zielt darauf ab, Microsoft 365 Copilot Konkurrenz zu machen. Workspace hat über 3 Milliarden Nutzer - die größte potenzielle AI-Nutzerbasis weltweit.
 
 **Quelle:** [Google Workspace Blog](https://workspace.google.com/blog)
 
 ---
 
 *Täglich neue KI-Updates: Folgen Sie [AiwithBert](https://github.com/bertus37987/ai-tools-directory) für professionelle KI-Insights.*
-    `
+`
   },
   'sora-2-complete-guide': {
     title: 'Sora 2.0 Complete Guide: Alles was Sie wissen müssen',
@@ -77,15 +90,16 @@ Google hat die Integration von Gemini AI in alle Workspace-Anwendungen angekünd
 
 *OpenAI's revolutionäres Text-to-Video Tool im Detail*
 
-OpenAI's Sora 2.0 hat die KI-Video-Landschaft grundlegend verändert. Erfahren Sie alles über Features, Preise und praktische Anwendung.
+---
 
 ## Was ist Sora 2.0?
 
-Sora 2.0 ist OpenAI's fortschrittlichstes Text-to-Video-Modell mit bis zu 60 Sekunden Videolänge und 4K-Auflösung.
+Sora 2.0 ist OpenAI's fortschrittlichstes Text-to-Video-Modell mit bis zu 60 Sekunden Videolänge und 4K-Auflösung. Erfahren Sie alles über Features, Preise und praktische Anwendung.
 
-### Kernfeatures:
+### Kernfeatures
+
 - **4K-Auflösung** bei 30fps
-- **Physik-Engine**: Realistische Objektinteraktionen  
+- **Physik-Engine**: Realistische Objektinteraktionen
 - **Audio-Sync**: Automatische Ton-Generierung
 - **Multi-Shot**: Verschiedene Kamerawinkel
 
@@ -98,19 +112,20 @@ Sora 2.0 ist OpenAI's fortschrittlichstes Text-to-Video-Modell mit bis zu 60 Sek
 **Quellen:**
 - [OpenAI Sora 2.0](https://openai.com/sora-2)
 - [TechCrunch Analysis](https://techcrunch.com/2025/10/23/sora-update)
-    `
-  }
+`
+  },
 }
 
 export async function generateStaticParams() {
-  return Object.keys(blogPosts).map((slug) => ({
+  return Object.keys(blogPosts).map((slug) => ({ 
     slug,
   }))
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const post = blogPosts[params.slug]
-  
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const post = blogPosts[slug]
+
   if (!post) {
     return {
       title: 'Post Not Found | AiwithBert',
@@ -136,9 +151,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const post = blogPosts[params.slug]
-  
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const post = blogPosts[slug]
+
   if (!post) {
     notFound()
   }
@@ -146,7 +162,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Hero Image */}
         <div className="mb-12">
@@ -156,49 +172,36 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
             className="w-full h-96 object-cover rounded-2xl"
           />
         </div>
-        
+
         {/* Article Header */}
         <header className="mb-12">
-          <div className="flex items-center gap-4 mb-6">
-            <span className="inline-flex items-center px-3 py-1 text-sm font-medium bg-black text-white rounded-lg">
+          <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
+            <span className="bg-black text-white px-3 py-1 rounded-full text-xs font-semibold">
               {post.category}
             </span>
-            {post.featured && (
-              <span className="inline-flex items-center px-3 py-1 text-sm font-medium bg-yellow-100 text-yellow-800 rounded-lg">
-                Featured
-              </span>
-            )}
-          </div>
-          
-          <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight">
-            {post.title}
-          </h1>
-          
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            {post.description}
-          </p>
-          
-          <div className="flex items-center space-x-6 text-sm text-gray-500">
             <div className="flex items-center">
-              <Calendar className="h-4 w-4 mr-2" />
-              {new Date(post.date).toLocaleDateString('de-DE', { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
+              <Calendar className="h-4 w-4 mr-1" />
+              {new Date(post.date).toLocaleDateString('de-DE', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
               })}
             </div>
             <div className="flex items-center">
-              <Clock className="h-4 w-4 mr-2" />
+              <Clock className="h-4 w-4 mr-1" />
               {post.read_time}
             </div>
           </div>
+
+          <h1 className="text-4xl font-bold text-black mb-4">{post.title}</h1>
+          <p className="text-xl text-gray-600">{post.description}</p>
         </header>
-        
+
         {/* Article Content */}
         <div className="prose prose-lg max-w-none">
           <div dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br>') }} />
         </div>
-        
+
         {/* Tags */}
         <div className="mt-16 pt-8 border-t border-gray-200">
           <h3 className="text-lg font-semibold text-black mb-4">Tags</h3>
@@ -210,10 +213,10 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
             ))}
           </div>
         </div>
-        
+
         {/* Navigation */}
         <div className="mt-16 pt-8 border-t border-gray-200 text-center">
-          <a 
+          <a
             href="/ai-tools-directory/blog"
             className="inline-flex items-center text-black hover:text-gray-700 font-medium"
           >

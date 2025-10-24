@@ -9,55 +9,44 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Dark Starlight Theme
+        // Dark Purple Starlight Theme - Minimalist & Readable
         dark: {
-          bg: '#0d1117',
-          'bg-secondary': '#161b22',
-          'bg-tertiary': '#1c2128',
-          'bg-hover': '#21262d',
-          border: '#30363d',
-          'border-subtle': '#21262d',
-          text: '#e6edf3',
-          'text-secondary': '#8b949e',
-          'text-tertiary': '#6e7681',
-          accent: '#58a6ff',
-          'accent-hover': '#79c0ff',
-          success: '#3fb950',
-          warning: '#d29922',
-          danger: '#f85149',
-        },
-        // Keep existing grays for compatibility
-        gray: {
-          50: '#f9fafb',
-          100: '#f3f4f6',
-          200: '#e5e7eb',
-          300: '#d1d5db',
-          400: '#9ca3af',
-          500: '#6b7280',
-          600: '#4b5563',
-          700: '#374151',
-          800: '#1f2937',
-          900: '#111827',
-          950: '#030712'
+          bg: '#0a0a0f',           // Deep purple-black
+          'bg-secondary': '#13131a', // Card background
+          'bg-tertiary': '#1a1a24',  // Hover states
+          'bg-hover': '#20202e',     // Interactive hover
+          border: '#2a2a3e',         // Subtle borders
+          'border-subtle': '#1f1f2e',
+          text: '#e8e8f0',           // High contrast text
+          'text-secondary': '#9d9daa', // Secondary text
+          'text-tertiary': '#6e6e7e',  // Tertiary text
+          accent: '#8b5cf6',         // Purple accent
+          'accent-hover': '#a78bfa', // Lighter purple hover
+          'accent-subtle': '#5b21b6', // Dark purple
+          success: '#22c55e',
+          warning: '#f59e0b',
+          danger: '#ef4444',
         },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace']
+        mono: ['JetBrains Mono', 'Menlo', 'monospace']
       },
-      animation: {
-        'fade-in': 'fadeIn 0.5s ease-in-out',
-        'slide-up': 'slideUp 0.5s ease-out',
+      fontSize: {
+        'xs': ['0.75rem', { lineHeight: '1rem' }],
+        'sm': ['0.875rem', { lineHeight: '1.25rem' }],
+        'base': ['0.9375rem', { lineHeight: '1.5rem' }], // Slightly smaller
+        'lg': ['1rem', { lineHeight: '1.5rem' }],
+        'xl': ['1.125rem', { lineHeight: '1.75rem' }],
+        '2xl': ['1.25rem', { lineHeight: '1.75rem' }],
+        '3xl': ['1.5rem', { lineHeight: '2rem' }],
       },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
+      spacing: {
+        '18': '4.5rem',
+        '22': '5.5rem',
+      },
+      maxWidth: {
+        '8xl': '88rem',
       },
     },
   },

@@ -5,12 +5,29 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        'black': '#000000',
-        'white': '#ffffff',
-        'gray': {
+        // Dark Starlight Theme
+        dark: {
+          bg: '#0d1117',
+          'bg-secondary': '#161b22',
+          'bg-tertiary': '#1c2128',
+          'bg-hover': '#21262d',
+          border: '#30363d',
+          'border-subtle': '#21262d',
+          text: '#e6edf3',
+          'text-secondary': '#8b949e',
+          'text-tertiary': '#6e7681',
+          accent: '#58a6ff',
+          'accent-hover': '#79c0ff',
+          success: '#3fb950',
+          warning: '#d29922',
+          danger: '#f85149',
+        },
+        // Keep existing grays for compatibility
+        gray: {
           50: '#f9fafb',
           100: '#f3f4f6',
           200: '#e5e7eb',
@@ -22,31 +39,26 @@ module.exports = {
           800: '#1f2937',
           900: '#111827',
           950: '#030712'
-        }
+        },
       },
       fontFamily: {
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
-        'mono': ['JetBrains Mono', 'monospace']
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace']
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
-        'slide-up': 'slideUp 0.3s ease-out',
-        'scale-in': 'scaleIn 0.2s ease-out'
+        'slide-up': 'slideUp 0.5s ease-out',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
-          '100%': { opacity: '1' }
+          '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { transform: 'translateY(10px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' }
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
         },
-        scaleIn: {
-          '0%': { transform: 'scale(0.95)', opacity: '0' },
-          '100%': { transform: 'scale(1)', opacity: '1' }
-        }
-      }
+      },
     },
   },
   plugins: [],
